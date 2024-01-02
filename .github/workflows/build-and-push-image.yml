@@ -34,8 +34,8 @@ jobs:
           push: true
           platforms: linux/arm64
           tags: |
-            ghcr.io/${{ github.repository }}:latest
-            ghcr.io/${{ github.repository }}:${{ github.sha }}
+            ghcr.io/brentoates/qbittorrent-port-forward-file-arm64:latest
+            ghcr.io/brentoates/qbittorrent-port-forward-file-arm64:${{ github.sha }}
 
       - name: Image digest
         run: echo ${{ steps.docker_build_push.outputs.digest }}
